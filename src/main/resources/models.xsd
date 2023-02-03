@@ -27,6 +27,14 @@
         </xs:complexType>
     </xs:element>
 
+    <xs:element name="GetActiveResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="activo" type="tns:activo"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
     <xs:complexType name="empleado">
         <xs:sequence>
             <xs:element name="cedula" type="xs:int"/>

@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="empleado" type="{http://massy.com/project}empleado"/&gt;
+ *         &lt;element name="activo" type="{http://massy.com/project}activo"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "empleado"
+    "activo"
 })
-@XmlRootElement(name = "GetEmployeeResponse")
-public class GetEmployeeResponse {
+@XmlRootElement(name = "GetActiveResponse")
+public class GetActiveResponse {
 
     @XmlElement(required = true)
-    protected Empleado empleado;
+    protected Activo activo;
 
     /**
-     * Obtiene el valor de la propiedad empleado.
+     * Obtiene el valor de la propiedad activo.
      * 
      * @return
      *     possible object is
-     *     {@link Empleado }
+     *     {@link Activo }
      *     
      */
-    public Empleado getEmpleado() {
-        return empleado;
+    public Activo getActivo() {
+        return activo;
     }
 
     /**
-     * Define el valor de la propiedad empleado.
+     * Define el valor de la propiedad activo.
      * 
      * @param value
      *     allowed object is
-     *     {@link Empleado }
+     *     {@link Activo }
      *     
      */
-    public void setEmpleado(Empleado value) {
-        this.empleado = value;
+    public void setActivo(Activo value) {
+        this.activo = value;
     }
 
 }
